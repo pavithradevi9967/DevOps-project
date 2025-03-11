@@ -1,0 +1,7 @@
+sudo apt update 
+sudo apt install -y docker.io docker-compose ansible
+Enable Docker:
+sudo systemctl enable --now docker
+sudo usermod -aG docker ubuntu
+newgrp docker  
+________________________________________

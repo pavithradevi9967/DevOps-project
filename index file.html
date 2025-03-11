@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Hub</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            text-align: center;
+            color: white;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+        h1 {
+            color: #667eea;
+        }
+        p {
+            color: #555;
+        }
+        .btn {
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: #ff5722;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .btn:hover {
+            background: #e64a19;
+            transform: scale(1.05);
+        }
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #667eea;
+        }
+        .quote {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ffeb3b;
+            border-radius: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Student Study Hub 📚</h1>
+        <p>Find study materials, notes, and assignment resources to excel in your academics.</p>
+        <button class="btn" onclick="handleClick()">Start Learning</button>
+
+        <div class="quote">💡 "Education is the most powerful weapon which you can use to change the world." – Nelson Mandela</div>
+
+        <div class="sections">
+            <div class="card">
+                <h3>📖 Study Notes</h3>
+                <p>Download and access notes for various subjects.</p>
+            </div>
+            <div class="card">
+                <h3>📝 Assignments</h3>
+                <p>Get assignment guidelines and templates.</p>
+            </div>
+            <div class="card">
+                <h3>🎥 Video Lessons</h3>
+                <p>Watch educational videos from experts.</p>
+            </div>
+            <div class="card">
+                <h3>📂 Past Papers</h3>
+                <p>Access previous exam papers for better preparation.</p>
+            </div>
+            <div class="card">
+                <h3>💬 Discussion Forum</h3>
+                <p>Engage with peers and teachers for study help.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleClick() {
+            alert('Welcome to the Student Study Hub! Keep learning and stay ahead.');
+        }
+    </script>
+</body>
+</html>
+

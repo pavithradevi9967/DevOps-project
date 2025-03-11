@@ -1,0 +1,23 @@
+---
+- name: Deploy Docker Containers & Grafana
+  hosts: servers
+  become: yes
+  tasks:
+
+    - name: Install Required Packages
+      apt:
+        name:
+          - docker.io
+          - docker-compose
+        state: present
+
+    - name: Start Docker Service
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Deploy Application Using Docker Compose
+      command: docker-compose up -d
+      args:
+        chdir: /home/ubuntu/devops-project
